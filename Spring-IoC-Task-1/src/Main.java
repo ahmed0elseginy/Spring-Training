@@ -14,6 +14,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         //retrieving the bean
         Shape circle = container.getBean("circle",Shape.class);
+        System.out.print("Enter the radius of the circle : ");
         int r = sc.nextInt();
         circle.getArea(r);
         Shape rectangle = container.getBean("rectangle",Shape.class);
